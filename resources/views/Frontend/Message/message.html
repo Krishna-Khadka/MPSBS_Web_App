@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About US | Modern Preparatory School</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/all.min.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <style>
+    .message {
+  padding: 80px 0;
+  background-color: #f3f3f3;
+}
+
+.message:nth-child(even) {
+  background-color: #f3f3f3;
+}
+
+.message:nth-child(odd) {
+  background-color: #222222;
+}
+
+.message .adm-msg .images {
+  width: 100%;
+  max-width: 250px;
+  height: auto;
+  -webkit-box-shadow: 10px 10px 0 0 var(--primary);
+  box-shadow: 10px 10px 0 0 var(--primary);
+}
+
+.message .adm-msg .images img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.message .adm-msg .inner {
+  margin-top: 20px; /* Add a margin-top for spacing */
+  display: flex;
+  gap: 4px;
+}
+
+.message .adm-msg .inner i {
+  font-size: 2rem;
+}
+
+.message .adm-msg .inner-msg h2 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  font-family: var(--font1);
+}
+
+.message:nth-child(odd) .adm-msg .inner i,
+.message:nth-child(odd) .adm-msg .inner-msg h2,
+.message:nth-child(odd) .adm-msg .inner-msg p {
+  color: var(--text-white);
+}
+
+.message .adm-msg .inner-msg p {
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--text-dim);
+  padding: 10px 0;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 767px) {
+
+  .message .adm-msg .images {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .message .adm-msg .inner {
+    margin-top: 30px;
+  }
+
+  .message .adm-msg .inner i {
+    font-size: 1.5rem;
+  }
+
+  .message .adm-msg .inner-msg h2 {
+    font-size: 1.5rem;
+  }
+}
+  </style>
+  <body>
+    <!-- ###################################  navbar code starts   ##################################### -->
+
+    <section id="top-nav" class="d-none d-lg-block">
+      <div class="container">
+        <div
+          class="top-nav-content d-flex justify-content-between align-items-center"
+        >
+          <div
+            class="top-left d-flex justify-content-center align-items-center"
+          >
+            <div
+              class="top-link d-flex justify-content-center align-items-center"
+            >
+              <div class="link-icon">
+                <i class="fa-solid fa-envelope"></i>
+              </div>
+              <div class="link-det">
+                <a href="mailto:krishkhadka2059@gmail.com"
+                  >SchoolDemo@gmail.com</a
+                >
+              </div>
+            </div>
+            <div
+              class="top-link d-flex justify-content-center align-items-center"
+            >
+              <div class="link-icon">
+                <i class="fa-solid fa-phone"></i>
+              </div>
+              <div class="link-det">
+                <a href="tel:9762514888">(+977) 9762514888</a>
+              </div>
+            </div>
+            <div
+              class="top-link d-flex justify-content-center align-items-center"
+            >
+              <div class="link-icon">
+                <i class="fa-solid fa-location-dot"></i>
+              </div>
+              <div class="link-det">
+                <p>Itahari, Sunsari</p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="top-right d-flex justify-content-between align-items-center"
+          >
+            <div
+              class="top-link d-flex justify-content-center align-items-center"
+            >
+              <div class="link-icon">
+                <i class="fa-solid fa-clock"></i>
+              </div>
+              <div class="link-det">
+                <p>Sunday-Friday / 9AM - 5PM</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <nav class="navbar navbar-dark navbar-expand-lg">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img
+            src="assets/images/modernlogo.png"
+            class="img-fluid"
+            alt="logo"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasDarkNavbar"
+          aria-controls="offcanvasDarkNavbar"
+        >
+          <span class="navbar-toggler-icon"></span>
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <div
+          class="offcanvas offcanvas-end"
+          tabindex="-1"
+          id="offcanvasDarkNavbar"
+          aria-labelledby="offcanvasDarkNavbarLabel"
+        >
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">
+              <img src="assets/images/logo.png" class="img-fluid" alt="logo" />
+            </h5>
+            <button
+              type="button"
+              class="btn-close btn-close-dark"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  About
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="about.html">About Us</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="vision.html"
+                      >Mission and Vision</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="team.html">Our Team</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="programs.html">Classes</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="admission.html">Admission</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Resources
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="news.html"
+                      >News and Events</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="notices.html">Notices</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="archieve.html">Archieve</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="imageGallery.html">Gallery</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- ###################################  navbar code ends   ##################################### -->
+
+    <!-- ################################### banner section starts ################################### -->
+
+    <section id="banner" style="background: url(assets/images/banner.jpg)">
+      <div class="container">
+        <div class="banner-text">
+          <h1>about us</h1>
+        </div>
+      </div>
+    </section>
+
+    <!-- ################################### banner section ends ###################################-->
+
+    <!--******** message section starts ********-->
+
+    <section class="message">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <!-- adm-msg div starts -->
+            <div class="row adm-msg">
+              <div class="col-lg-3">
+                <div class="images">
+                  <img src="assets/images/sir.jpg" alt="admin-image" />
+                </div>
+              </div>
+              <div class="col-lg-9">
+                <div class="inner d-flex gap-4">
+                  <i class="fa-solid fa-quote-left"></i>
+                  <div class="inner-msg">
+                    <h2>
+                      It is my great pleasure to welcome you to our school.
+                    </h2>
+                    <p>
+                      Our students enjoy coming to school each day because they
+                      know they will be cared for and supported in their
+                      learning. Each student is recognised and ‘known’ by their
+                      expert teachers, allowing them to develop the confidence
+                      required to embrace the challenges that will be skillfully
+                      and carefully placed before them.
+                    </p>
+                    <p>
+                      We are proud of our students because they value and always
+                      look to promote and practise kindness. We are proud of our
+                      students because they strive for excellence and recognise
+                      that this can be exhibited in many different forms.
+                    </p>
+                    <p>
+                      Wellbeing is at the centre of everything we do and this is
+                      cultivated and grown through helping each child develop
+                      positive and mutually respectful relationships, both with
+                      their peers and their teachers.
+                    </p>
+                    <p>
+                      Our academic results speak for themselves and are the
+                      product of an emphasis on continual self improvement.
+                      Students are encouraged to explore, follow their curiosity
+                      and be creative in their thinking. Our teachers are
+                      experts in being responsive to each child’s needs,
+                      providing very individual feedback to enable them to
+                      embrace the next step in their learning.
+                    </p>
+                    <p>
+                      Students are provided with extensive opportunities to
+                      flourish and find their ‘element’ through a broad, rich
+                      academic and co curricular programme, with a focus on
+                      leadership and community.
+                    </p>
+                    <p>
+                      Please enjoy finding out more about our school, through
+                      the different sections of the website. Don’t take our word
+                      for it though. Come and see and feel what makes TBS an
+                      exceptional school by meeting the exceptional people on
+                      our beautiful campus.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- adm-msg div ends -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="message">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <!-- adm-msg div starts -->
+            <div class="row adm-msg">
+              <div class="col-lg-3">
+                <div class="images">
+                  <img src="assets/images/sir.jpg" alt="admin-image" />
+                </div>
+              </div>
+              <div class="col-lg-9">
+                <div class="inner d-flex gap-4">
+                  <i class="fa-solid fa-quote-left"></i>
+                  <div class="inner-msg">
+                    <h2>
+                      It is my great pleasure to welcome you to our school.
+                    </h2>
+                    <p>
+                      Our students enjoy coming to school each day because they
+                      know they will be cared for and supported in their
+                      learning. Each student is recognised and ‘known’ by their
+                      expert teachers, allowing them to develop the confidence
+                      required to embrace the challenges that will be skillfully
+                      and carefully placed before them.
+                    </p>
+                    <p>
+                      We are proud of our students because they value and always
+                      look to promote and practise kindness. We are proud of our
+                      students because they strive for excellence and recognise
+                      that this can be exhibited in many different forms.
+                    </p>
+                    <p>
+                      Wellbeing is at the centre of everything we do and this is
+                      cultivated and grown through helping each child develop
+                      positive and mutually respectful relationships, both with
+                      their peers and their teachers.
+                    </p>
+                    <p>
+                      Our academic results speak for themselves and are the
+                      product of an emphasis on continual self improvement.
+                      Students are encouraged to explore, follow their curiosity
+                      and be creative in their thinking. Our teachers are
+                      experts in being responsive to each child’s needs,
+                      providing very individual feedback to enable them to
+                      embrace the next step in their learning.
+                    </p>
+                    <p>
+                      Students are provided with extensive opportunities to
+                      flourish and find their ‘element’ through a broad, rich
+                      academic and co curricular programme, with a focus on
+                      leadership and community.
+                    </p>
+                    <p>
+                      Please enjoy finding out more about our school, through
+                      the different sections of the website. Don’t take our word
+                      for it though. Come and see and feel what makes TBS an
+                      exceptional school by meeting the exceptional people on
+                      our beautiful campus.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- adm-msg div ends -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="message">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+              <!-- adm-msg div starts -->
+              <div class="row adm-msg">
+                <div class="col-lg-3">
+                  <div class="images">
+                    <img src="assets/images/sir.jpg" alt="admin-image" />
+                  </div>
+                </div>
+                <div class="col-lg-9">
+                  <div class="inner d-flex gap-4">
+                    <i class="fa-solid fa-quote-left"></i>
+                    <div class="inner-msg">
+                      <h2>
+                        It is my great pleasure to welcome you to our school.
+                      </h2>
+                      <p>
+                        Our students enjoy coming to school each day because they
+                        know they will be cared for and supported in their
+                        learning. Each student is recognised and ‘known’ by their
+                        expert teachers, allowing them to develop the confidence
+                        required to embrace the challenges that will be skillfully
+                        and carefully placed before them.
+                      </p>
+                      <p>
+                        We are proud of our students because they value and always
+                        look to promote and practise kindness. We are proud of our
+                        students because they strive for excellence and recognise
+                        that this can be exhibited in many different forms.
+                      </p>
+                      <p>
+                        Wellbeing is at the centre of everything we do and this is
+                        cultivated and grown through helping each child develop
+                        positive and mutually respectful relationships, both with
+                        their peers and their teachers.
+                      </p>
+                      <p>
+                        Our academic results speak for themselves and are the
+                        product of an emphasis on continual self improvement.
+                        Students are encouraged to explore, follow their curiosity
+                        and be creative in their thinking. Our teachers are
+                        experts in being responsive to each child’s needs,
+                        providing very individual feedback to enable them to
+                        embrace the next step in their learning.
+                      </p>
+                      <p>
+                        Students are provided with extensive opportunities to
+                        flourish and find their ‘element’ through a broad, rich
+                        academic and co curricular programme, with a focus on
+                        leadership and community.
+                      </p>
+                      <p>
+                        Please enjoy finding out more about our school, through
+                        the different sections of the website. Don’t take our word
+                        for it though. Come and see and feel what makes TBS an
+                        exceptional school by meeting the exceptional people on
+                        our beautiful campus.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- adm-msg div ends -->
+            </div>
+          </div>
+        </div>
+      </section>
+
+    <!--******** message section ends ********-->
+
+    <!-- ################################### footer section starts ################################### -->
+
+    <section
+      id="footer"
+      style="
+        background-image: linear-gradient(#000a, #000b),
+          url(assets/images/banner1.jpg);
+      "
+    >
+      <div class="container">
+        <div class="footer-top">
+          <div class="row">
+            <div class="col-lg-4">
+              <div class="footer-info footer-phone d-flex align-items-center">
+                <div class="footer-icon">
+                  <img src="assets/icons/phone.png" class="img-fluid" alt />
+                </div>
+                <div class="footer-icon-content">
+                  <p>Give us a call</p>
+                  <h5>
+                    <a href="tel:9762514789">+977 9762514789</a>
+                  </h5>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="footer-info footer-mail d-flex align-items-center">
+                <div class="footer-icon">
+                  <img src="assets/icons/mail.png" class="img-fluid" alt />
+                </div>
+                <div class="footer-icon-content">
+                  <p>Send us a message</p>
+                  <h5>
+                    <a href="mailto:krishparajuli57@gmail.com"
+                      >krishparajuli57@gmail.com</a
+                    >
+                  </h5>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="footer-info footer-address d-flex align-items-center">
+                <div class="footer-icon">
+                  <img src="assets/icons/location.png" class="img-fluid" alt />
+                </div>
+                <div class="footer-icon-content">
+                  <p>Visit our location</p>
+                  <h5>
+                    <a href="#">Itahari, Sunsari</a>
+                  </h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer-main">
+          <div class="row">
+            <div class="col-xl-3 col-lg-3 col-sm-6">
+              <div class="footer-title">
+                <h4>about Modern preparatory</h4>
+              </div>
+              <div class="footer-content">
+                <p>
+                  Monotne deplos copertve chanva andng crorate Qhanin Unique
+                  Qnderwhe Premum Convere With Uheng Mutmed Cover
+                </p>
+              </div>
+              <div class="footer-social">
+                <h5>follow us :</h5>
+                <ul>
+                  <li>
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-xl-3 col-lg-3 col-sm-6">
+              <div class="footer-title">
+                <h4>services</h4>
+              </div>
+              <div class="footer-content">
+                <ul>
+                  <li><a href="#">home</a></li>
+                  <li><a href="#">about us</a></li>
+                  <li><a href="#">students reviews</a></li>
+                  <li><a href="#">gallery</a></li>
+                  <li><a href="#">contact us</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-xl-3 col-lg-3 col-sm-6">
+              <div class="footer-title">
+                <h4>information</h4>
+              </div>
+              <div class="footer-content">
+                <ul>
+                  <li><a href="#">message from principal</a></li>
+                  <li><a href="#">our team</a></li>
+                  <li><a href="#">news & events</a></li>
+                  <li><a href="#">notices</a></li>
+                  <li><a href="#">privacy & policy</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-xl-3 col-lg-3 col-sm-6">
+              <div class="footer-title">
+                <h4>newsletter subscription</h4>
+              </div>
+              <div class="footer-content">
+                <p>
+                  Enter your email and get latest updates and offers subscribe
+                  us
+                </p>
+              </div>
+              <div class="footer-subs">
+                <form action="#">
+                  <div class="row">
+                    <div class="col-lg-12">
+                      <input
+                        type="email"
+                        autocomplete="off"
+                        class="form-control"
+                        placeholder="Enter your email"
+                        name="email"
+                      />
+                    </div>
+                    <div class="col-12">
+                      <button type="submit" name="subscribe" class="sub-btn">
+                        subscribe now
+                      </button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ################################### footer section ends ################################### -->
+
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>
