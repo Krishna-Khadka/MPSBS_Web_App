@@ -2,7 +2,81 @@
 
 @section('body-content')
     <section id="hero">
-        <div class="owl-carousel owl-theme">
+        <div class="slider">
+            <div class="list">
+              <div class="item">
+                <img src="{{ asset('frontend/site-images/drgtour.jpg') }}" alt="" />
+
+                <div class="content">
+                  <div class="title">MAGIC SLIDER</div>
+                  <div class="type">FLOWER</div>
+                  <div class="description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti
+                    temporibus quis eum consequuntur voluptate quae doloribus
+                    distinctio. Possimus, sed recusandae. Lorem ipsum dolor sit amet
+                    consectetur adipisicing elit. Sequi, aut.
+                  </div>
+                  <div class="button">
+                    <button>SEE MORE</button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="item">
+                <img src="{{ asset('frontend/site-images/students.jpg') }}" alt="" />
+
+                <div class="content">
+                  <div class="title">MAGIC SLIDER</div>
+                  <div class="type">NATURE</div>
+                  <div class="description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti
+                    temporibus quis eum consequuntur voluptate quae doloribus
+                    distinctio. Possimus, sed recusandae. Lorem ipsum dolor sit amet
+                    consectetur adipisicing elit. Sequi, aut.
+                  </div>
+                  <div class="button">
+                    <button>SEE MORE</button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="item">
+                <img src="{{ asset('frontend/site-images/missionvisionbanner.jpg') }}" alt="" />
+
+                <div class="content">
+                  <div class="title">MAGIC SLIDER</div>
+                  <div class="type">PLANT</div>
+                  <div class="description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti
+                    temporibus quis eum consequuntur voluptate quae doloribus
+                    distinctio. Possimus, sed recusandae. Lorem ipsum dolor sit amet
+                    consectetur adipisicing elit. Sequi, aut.
+                  </div>
+                  <div class="button">
+                    <button>SEE MORE</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- <div class="image-thumbnail">
+              <div class="item">
+                <img src="./image/slider1.jpeg" alt="" />
+              </div>
+              <div class="item">
+                <img src="./image/slider2.jpeg" alt="" />
+              </div>
+              <div class="item">
+                <img src="./image/slider3.jpeg" alt="" />
+              </div>
+            </div> -->
+
+            <div class="nextPrevArrows">
+              <button class="prev"><</button>
+              <button class="next">></button>
+            </div>
+          </div>
+        {{-- <div class="owl-carousel owl-theme">
 
             <div class="item">
                 <div class="image-container">
@@ -77,7 +151,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> --}}
     </section>
 
     <!-- ################################### hero-section ends ################################### -->
